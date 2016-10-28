@@ -2,9 +2,116 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
+    <style>
+        .left
+        {
+            margin-left: 30px;
+            margin-top:50px;
+            width: 300px;
+            height: 900px;
+            background: palegreen;
+        }
+        .nav {
+            float: left;
+        }
+
+        .nav a {
+            display: block;
+            text-decoration: none;
+            color: #333;
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            background-color: #9A9797;
+        }
+
+        .nav a:hover {
+            background: #444;
+            color: white;
+        }
+
+        .nav li {
+            list-style: none;
+        }
+
+        .nav > li {
+            float: left;
+            position: relative;
+        }
+
+        .nav ul {
+            white-space: nowrap;
+            padding: 0;
+            visibility: hidden;
+        }
+
+        .nav ul li {
+            position: relative;
+        }
+
+        .nav ul ul {
+            position: absolute;
+            top: 0;
+            float: left;
+            margin-left: 100%;
+            visibility: hidden;
+        }
+
+        .nav li:hover > ul {
+            visibility: visible;
+        }
+    </style>
 </head>
 <body>
-$END$
+<div class="left">
+    <div>图书分类</div>
+    <div>
+        <div>
+            <ul class="nav">
+                        <li><a href="#">二级目录34</a>
+                            <ul>
+                                <li><a href="#">三级目录341</a></li>
+                                <li><a href="#">三级目录342</a></li>
+                            </ul>
+                        </li>
+                </ul>
+        </div>
+      <!--  <ul class="nav">
+            <li><a href="#"></a>
+                <ul>
+                    <li><a href="#">二级目录11</a></li>
+                    <li><a href="#">二级目录12</a>
+                        <ul>
+                            <li><a href="#">三级目录121</a></li>
+                            <li><a href="#">三级目录122</a></li>
+                            <li><a href="#">三级目录123</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">二级目录13</a></li>
+                </ul>
+            </li>
+            <li><a href="#">一级目录2</a></li>
+            <li><a href="#">一级目录3</a>
+                <ul>
+                    <li><a href="#">二级目录31</a></li>
+                    <li><a href="#">二级目录32</a>
+                        <ul>
+                            <li><a href="#">三级目录321</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">二级目录33</a></li>
+                    <li><a href="#">二级目录34</a>
+                        <ul>
+                            <li><a href="#">三级目录341</a></li>
+                            <li><a href="#">三级目录342</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>-->
+    </div>
+</div>
 </body>
 </html>
+<!--
+年级大一大二大三学院计算机院经管院自动化学院专业网络工程软件工程计算机科学与技术-->
